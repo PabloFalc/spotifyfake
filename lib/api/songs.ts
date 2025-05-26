@@ -1,7 +1,7 @@
 import type { Song, SongCreateInput } from "@/types/song.types";
 import type { BaseReply } from "@/types/basic.type";
 
-const BASE_URL = "http://localhost:3100";
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function fetchSongs(): Promise<Song[]> {
     try {

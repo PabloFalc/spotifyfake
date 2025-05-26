@@ -1,6 +1,7 @@
 import type { BaseReply } from "@/types/basic.type";
 import type { User, UserCreateInput } from "@/types/user.types";
-const BASE_URL = "http://localhost:3100";
+
+const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 export async function registerUser(
     bodyUser: UserCreateInput
