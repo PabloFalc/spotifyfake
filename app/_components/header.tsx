@@ -15,7 +15,7 @@ export function Header({ onUserSelect }: HeaderProps) {
     return (
         <header className="bg-black/50 backdrop-blur-sm border-b border-[#00061e] sticky top-0 z-10">
             <div className="max-w-7xl mx-auto px-4 py-4">
-                <div className="flex items-center justify-between mb-4">
+                <div className="flex items-center justify-between mb-4 flex-wrap flex-grow-1 gap-4">
                     <div className="flex items-center gap-2">
                         <BsSpotify size={48} />
                         <h1 className="text-2xl font-bold text-white">
@@ -29,7 +29,7 @@ export function Header({ onUserSelect }: HeaderProps) {
                         <Link href="/register">
                             <Button
                                 variant="outline"
-                                className="border-[#1AD9FF] text-[#1AD9FF] hover:bg-[#1AD9FF] hover:text-white transition-colors"
+                                className="bg-black border-[#1AD9FF] text-[#1AD9FF] hover:bg-[#1AD9FF] hover:text-white transition-colors"
                             >
                                 <UserPlus className="w-4 h-4 mr-2" />
                                 Registrar usuário ou Música
@@ -38,7 +38,7 @@ export function Header({ onUserSelect }: HeaderProps) {
                         <Link href="/about">
                             <Button
                                 variant="outline"
-                                className="border-[#476cff] text-[#476cff] hover:bg-[#476cff] hover:text-white transition-colors"
+                                className="bg-black border-[#476cff] text-[#476cff] hover:bg-[#476cff] hover:text-white transition-colors"
                             >
                                 Sobre nós
                             </Button>

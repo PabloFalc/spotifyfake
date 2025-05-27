@@ -8,8 +8,6 @@ import { Header } from "./_components/header";
 import { SongsGrid } from "./_components/songs-grid";
 import { UserModal } from "@/app/_components/user-modal";
 import { deleteSong } from "@/lib/api/songs";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 
 export default function HomePage() {
     const [songs, setSongs] = useState<Song[]>([]);
